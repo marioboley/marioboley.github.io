@@ -26,8 +26,8 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
   location         : # "Haifa"
-  employer         : "<a href='https://is-web.hevra.haifa.ac.il>University of Haifa</a>"
-  uri              : # "https://is-web.hevra.haifa.ac.il/index.php/en/component/content/article/362-dr-mario-boley?Itemid=103"
+  employer         : "University of Haifa"
+  uri              : "https://is-web.hevra.haifa.ac.il/index.php/en/staff-en/academic-staff" # "https://is-web.hevra.haifa.ac.il/index.php/en/component/content/article/362-dr-mario-boley?Itemid=103"
   email            : "mboley@is.haifa.ac.il" 
 
   # Academic websites
