@@ -24,10 +24,10 @@ author:
   avatar           : "240408_mario.boley.jpg"
   name             : "Mario Boley"
   pronouns         : # example: "she/her"  
-  bio              : "Working on Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
+  bio              : "Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
   location         : "Haifa"
   employer         : "Department of Information Systems, University of Haifa"
-  uri              : # URL
+  uri              : "https://is-web.hevra.haifa.ac.il/index.php/en/component/content/article/362-dr-mario-boley?Itemid=103"
   email            : "mboley@is.haifa.ac.il" 
 
   # Academic websites
