@@ -12,7 +12,7 @@ title                    : "Dr. Mario Boley"
 title_separator          : "-"
 name                     : &name "Mario Boley"
 description              : &description "Reserach on Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
-url                      : https:/marioboley.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://marioboley.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "marioboley/marioboley.github.io"
 
