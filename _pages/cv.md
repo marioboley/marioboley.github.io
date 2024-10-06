@@ -9,45 +9,24 @@ redirect_from:
 
 {% include base_path %}
 
-Full CV available in [pdf](/files/cv_with_pubs.pdf) format.
+A full CV with publications is available in [pdf](/files/cv_with_pubs.pdf) format.
 
-Education
-======
+## Education
+
 * Ph.D in Computer Science, University of Bonn, 2011
 * Diploma in Computer Science, University of Bonn, 2006
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Affiliation History
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **2024 - today:** Senior lecturer at the Department of Informaton Systems at Haifa University, Israel
+* **2018 - today:** Senior lecturer at the Department of Data Science and AI at Monash University, Australia (tenured until August 2024, currently adjunct)
+* **2017 - 2018:** Post-doctoral Fellow at Max Planck Institute for Informatics, Saarbrücken, Germany
+* **2015 - 2017:** Post-doctoral Fellow at Fritz Haber Institute of the Max Planck Society (Materials Science), Berlin, Germany
+* **2011 - 2015:** Post-doctoral Fellow at University of Bonn, Department of Information Systems and AI
+* **2007 - 2014:** Research Scientist at Fraunhofer Institute for Intelligent Analysis and Information Systems, St. Augustin
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+## Publications
 
-Publications
-======
   <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
