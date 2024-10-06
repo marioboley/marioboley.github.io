@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Dr. Mario Boley"
 title_separator          : "-"
 name                     : &name "Mario Boley"
-description              : &description "Research on Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
+description              : &description "Research on Statistical Machine Learning, Optimisation, Applications to Materials Science and Chemistry"
 url                      : https://marioboley.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "marioboley/marioboley.github.io"
@@ -27,8 +27,8 @@ author:
   bio              : "Interpretable Machine Learning, Statistical Learning, Discrete Optimisation, Model-driven Optimisation, Applications to Materials Science and Chemistry"
   location         : # "Haifa"
   employer         : "University of Haifa"
-  uri              : "https://is-web.hevra.haifa.ac.il/index.php/en/staff-en/academic-staff" # "https://is-web.hevra.haifa.ac.il/index.php/en/component/content/article/362-dr-mario-boley?Itemid=103"
-  email            : "mboley@is.haifa.ac.il" 
+  uri              : "https://is-web.hevra.haifa.ac.il/index.php/en/staff-en/academic-staff"# "https://is-web.hevra.haifa.ac.il/index.php/en/component/content/article/362-dr-mario-boley?Itemid=103"
+  email            : "mboley@is.haifa.ac.il"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
