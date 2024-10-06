@@ -3,7 +3,7 @@ title: "Identifying domains of applicability of machine learning models for mate
 collection: publications
 category: manuscripts
 permalink: '/publication/2020-domofapp' 
-excerpt: 'Demonstrates how statistical rule learning enables the discovery of trustworthy input ranges of materials property models.'
+excerpt: 'Demonstrates how statistical rule learning enables the discovery of trustworthy input ranges of machine learning models for materials properties.'
 date: 2009-10-01
 venue: 'Nature Communications'
 slidesurl: 
@@ -11,4 +11,5 @@ paperurl: 'https://www.nature.com/articles/s41467-020-17112-9'
 citation: 'C Sutton, M Boley, LM Ghringhelli, M Rupp, J Vreeken, M Scheffler. (2020). &quot;Identifying domains of applicability of machine learning models for materials science.&quot; <i>Nature Communications</i>. 11(1),4428.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Assessing the performance of machine learning models via their average performance across some unbounded domain can both over- and undersell their merits. 
+Using rule learning (or subgroup discovery) techniques allows to identify an intepretable bounded region where a model behaves execptionally well.
