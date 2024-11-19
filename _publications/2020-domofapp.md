@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: '/publication/2020-domofapp' 
 excerpt: 'Demonstrates how statistical rule learning enables the discovery of trustworthy input ranges of machine learning models for materials properties.'
-date: 2009-10-01
+date: 2020-09-04
 venue: 'Nature Communications'
 slidesurl: 
 paperurl: 'https://www.nature.com/articles/s41467-020-17112-9'
