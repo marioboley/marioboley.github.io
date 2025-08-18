@@ -18,7 +18,7 @@ A full CV with publications is available in [pdf](/files/cv_with_pubs.pdf) forma
 
 ## Affiliation History
 
-* **2024 - today:** Senior lecturer at the Department of Informaton Systems at Haifa University, Israel
+* **2024 - today:** Associate professor at the Department of Information Systems at Haifa University, Israel
 * **2018 - today:** Senior lecturer at the Department of Data Science and AI at Monash University, Australia (tenured until August 2024, currently adjunct)
 * **2017 - 2018:** Post-doctoral Fellow at Max Planck Institute for Informatics, Saarbrücken, Germany
 * **2015 - 2017:** Post-doctoral Fellow at Fritz Haber Institute of the Max Planck Society (Materials Science), Berlin, Germany
