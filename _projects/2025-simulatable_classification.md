@@ -1,7 +1,8 @@
 ---
 title: "Human-Simulatable Additive Classification Models"
 collections: projects
-date: 2025-08-17
+date: 2025-08-18
+mathjax: true
 ---
 
 Generalised additive classification models provide probabilistic predictions by adding the output of individual predictors to form a raw score $a=a_1+\dots+a_k$ and then by mapping this raw score to a probability $p(a)$. This process is considered human-interpretable because of the relative ease with which humans can carry out addition, and this is further enhanced by model fitting methods that restrict the individual predictor output to a small set of round values, i.e., $a_i \in \{-5, \dots, 5\}$. However, even when the resulting raw sum is easy to compute and a round value, the standard classification machinery based around the logistic or cross-entropy transform $p(a)=e^a/(1+e^a)$ renders it hard for humans to convert raw outputs to probabilities. For instance, a raw model output of $a=1$ corresponds to a probability $e/(1+e) \approx$ 0.7311 and $a=2$ corresponds to $e^2/(1+e^2)\approx 0.8808$.
