@@ -14,6 +14,6 @@ Collections: {{ site.collections | map: "label" | join: ", " }}
 Size via col.docs: {{ col.docs | size }}
 Paths: {{ col.docs | map: "path" | join: " | " }}
 
-{% for item in site.projects reversed %}
+{% for post in site.projects reversed %}
   {% include archive-single.html %}
 {% endfor %}
