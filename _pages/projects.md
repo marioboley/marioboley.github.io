@@ -6,6 +6,7 @@ author_profile: true
 ---
 {% include base_path %}
 
-{% for post in site.projects reversed %}
+{% assign research = site.projects | where:"project_type","collaborative" %}
+{% for item in research %}
   {% include archive-single.html %}
 {% endfor %}
