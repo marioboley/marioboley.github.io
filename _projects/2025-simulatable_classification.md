@@ -2,6 +2,7 @@
 title: "Human-Simulatable Additive Classification Models"
 collections: projects
 date: 2025-08-18
+project_type: student
 mathjax: true
 ---
 

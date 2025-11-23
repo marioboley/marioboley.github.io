@@ -2,6 +2,7 @@
 title: "Graph Neural Networks for Guiding Chemical Synthesis of Metal–Organic Frameworks"
 collection: projects
 date: 2025-08-25
+project_type: student
 ---
 
 This project will explore how graph neural networks (GNNs) can be used to probabilistically predict successful crystallization conditions in the reticular synthesis of novel metal–organic frameworks (MOFs). 
