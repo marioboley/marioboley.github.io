@@ -1,4 +1,4 @@
-{%- assign pub = include.post -%}
+{%- assign pub = include.post | default: post -%}
 
 <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   <h2 class="archive__item-title" itemprop="headline">
