@@ -1,0 +1,13 @@
+{%- assign pub = include.post -%}
+
+<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <h2 class="archive__item-title" itemprop="headline">
+    <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+  </h2>
+
+  {% if pub.citation %}
+    <p class="archive__item-excerpt" itemprop="description">
+      {{ pub.citation }}
+    </p>
+  {% endif %}
+</article>
