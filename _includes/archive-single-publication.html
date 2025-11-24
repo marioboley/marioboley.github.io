@@ -1,9 +1,7 @@
 {%- assign pub = include.post | default: post -%}
 
-<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-  <p class="archive__item-excerpt" itemprop="description">
-    <a href="{{ pub.url | relative_url }}">
-      {{ pub.citation | default: pub.title }}
-    </a>
-  </p>
-</article>
+<p itemprop="description">
+  <a href="{{ pub.url | relative_url }}">
+    {{ pub.citation | default: pub.title }}
+  </a>
+</p>

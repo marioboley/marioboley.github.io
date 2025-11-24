@@ -14,7 +14,7 @@ author_profile: true
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -22,15 +22,21 @@ author_profile: true
       {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
+        <ol class="publication-list">
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single-publication.html %}
+      <li>{% include archive-single-publication.html %}</li>
     {% endfor %}
+    {% if title_shown %}
+      </ol>
+    {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single-publication.html %}
-  {% endfor %}
+  <ol class="publication-list">
+    {% for post in site.publications reversed %}
+      <li>{% include archive-single-publication.html %}</li>
+    {% endfor %}
+  </ol>
 {% endif %}
 
 
