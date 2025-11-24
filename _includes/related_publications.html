@@ -1,25 +1,11 @@
 {% if page.publications %}
-  {% assign pubs = site.publications | where: "slug", page.publications[0] %}
-  {% comment %}
-    Build a list of publication objects matching the slugs in page.publications.
-  {% endcomment %}
-
-  {% assign related_pubs = "" | split: "" %}
-  {% for key in page.publications %}
-    {% assign pub = site.publications | where: "slug", key | first %}
-    {% if pub %}
-      {% assign related_pubs = related_pubs | push: pub %}
-    {% endif %}
-  {% endfor %}
-
-  {% if related_pubs.size > 0 %}
-    <h2>Related publications</h2>
-    <ul>
-      {% for pub in related_pubs %}
-        <li>
-          <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  <h2>Publications</h2>
+  <ol class="publication-list">
+    {% for key in page.publications %}
+      {% assign pub = site.publications | where: "slug", key | first %}
+      {% if pub %}
+        <li>{% include archive-single-publication.html post=pub %}</li>
+      {% endif %}
+    {% endfor %}
+  </ol>
 {% endif %}
