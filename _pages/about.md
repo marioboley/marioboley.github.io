@@ -15,7 +15,7 @@ I am Associate Professor at the Department of Information Systems at the Univers
 {% assign updates = updates | sort: "date" | reverse %}
 
 <ul>
-  {% for item in updates limit:3 %}
+  {% for item in updates limit:10 %}
     <li>
       <span>{{ item.date | date: "%Y-%m-%d" }}</span>
       &mdash;
