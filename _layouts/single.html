@@ -48,17 +48,30 @@ layout: default
         {{ content }}
 
         {% include related_publications.html %}
+        
+        {% if page.citation or page.paperurl or page.slidesurl or page.bibtex %}
+          <p style="font-size: smaller">
+            {% if page.citation %}
+              Citation: {{ page.citation }}<br />
+            {% endif %}
 
-        {% if page.citation and page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Paper</a> | <a href="{{ page.slidesurl }}">Slides</a></p>
-        {% elsif page.citation and page.paperurl %}
-          <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Paper</a></p>
-        {% elsif page.citation and page.slidesurl %}
-          <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Slides</a></p>
-        {% elsif page.citation %}
-          <p style="font-size: smaller">Citation: {{ page.citation }}</p>
-        {% elsif page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Slides</a></p>
+            {% if page.paperurl %}
+              <a href="{{ page.paperurl }}">Paper</a>
+            {% endif %}
+
+            {% if page.slidesurl %}
+              {% if page.paperurl %} | {% endif %}
+              <a href="{{ page.slidesurl }}">Slides</a>
+            {% endif %}
+
+            {% if page.bibtex %}
+              {% if page.paperurl or page.slidesurl %} | {% endif %}
+              <a href="#" onclick="this.nextElementSibling.open = !this.nextElementSibling.open; return false;">BibTeX</a>
+              <details style="margin-top:0.5em;">
+                <pre>{{ page.bibtex | escape }}</pre>
+              </details>
+            {% endif %}
+          </p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

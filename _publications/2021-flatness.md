@@ -9,6 +9,15 @@ venue: 'Proceedings of the 34th International Conference on Neural Information P
 slidesurl: 
 paperurl: 'https://papers.nips.cc/paper_files/paper/2021/file/995f5e03890b029865f402e83a81c29d-Paper.pdf'
 citation: 'Petzka, Henning, Michael Kamp, Linara Adilova, Cristian Sminchisescu, and Mario Boley. "Relative flatness and generalization." Advances in neural information processing systems 34 (NeurIPS 2021): 18420-18432.'
+bibtex: |-
+    @inproceedings{petzka2021flatness,
+        title = {Relative Flatness and Generalization},
+        author = {Petzka, Henning and Kamp, Michael and Adilova, Linara and Sminchisescu, Cristian and Boley, Mario},
+        booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+        volume    = {34},
+        year      = {2021},
+        pages     = {18420--18432}
+    }
 ---
 
 **Abstract:** Flatness of the loss curve is conjectured to be connected to the generalization
