@@ -19,8 +19,8 @@ I am Associate Professor at the Department of Information Systems at the Univers
     <li>
       <span>{{ item.date | date: "%Y-%m-%d" }}</span>
       &mdash;
-      {% if item.collection == "publications" %}[Publication]{% endif %}
-      {% if item.collection == "projects" %}[Project]{% endif %}
+      {% if item.collection == "publications" %}Publication:{% endif %}
+      {% if item.collection == "projects" and item.project_type == "student" %}Student Project:{% endif %}
       <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
     </li>
   {% endfor %}
