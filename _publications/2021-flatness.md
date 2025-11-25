@@ -8,7 +8,7 @@ date: 2021-12-06
 venue: 'Proceedings of the 34th International Conference on Neural Information Processing Systems (NeurIPS)'
 slidesurl: 
 paperurl: 'https://papers.nips.cc/paper_files/paper/2021/file/995f5e03890b029865f402e83a81c29d-Paper.pdf'
-citation: 'Petzka, Henning, Michael Kamp, Linara Adilova, Cristian Sminchisescu, and Mario Boley. "Relative flatness and generalization." <i>Advances in neural information processing systems</i>34 (NeurIPS 2021): 18420-18432.'
+citation: 'Petzka, Henning, Michael Kamp, Linara Adilova, Cristian Sminchisescu, and Mario Boley. "Relative flatness and generalization." <i>Advances in neural information processing systems</i> 34 (NeurIPS 2021): 18420-18432.'
 bibtex: |-
     @inproceedings{petzka2021flatness,
         title = {Relative Flatness and Generalization},
