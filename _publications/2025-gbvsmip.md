@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-gbvsmip
 excerpt: 'How accurate is gradient boosting as an approximation algorithm for the best additive model with a limited number of terms? Theoretically, we show that the approximation gap can be as wide as $1/2$, but how representative is that for the practical performance? An empirical comparison with mixed integer programming paints a differentiated picture.'
-date: 2025-11-25
+date: 2025-11-20
 venue: 'Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECMLPKDD 2025)'
 paperurl: 'https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/preprints/2025/research/preprint_ecml_pkdd_2025_research_522.pdf'
 slidesurl: 
