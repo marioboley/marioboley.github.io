@@ -8,7 +8,7 @@ excerpt: 'Closed loop AI-system for the accelerated discovery of novel metal org
 date: 2025-11-25
 paperurl: https://www.nature.com/articles/s44160-025-00939-9
 citation: 'Rong, Z., Chen, Z., Luong, F. et al. (2025) "Algorithmic iterative reticular synthesis of zeolitic imidazolate framework crystals" <i>Nat. Synth</i>.'
-abstract: |-
+bibtex: |-
     @article{rongAlgorithmicIterativeReticular2025,
         title = {Algorithmic Iterative Reticular Synthesis of Zeolitic Imidazolate Framework Crystals},
         author = {Rong, Zichao and Chen, Zihao and Luong, Felix and Chheda, Saumil and Luong, H. T. Nhan and Zheng, Zhiling and Greco, Kevin and Alghamdi, Abdullah A. and Bui, K. Huyen and Jaffrelot Inizan, Th{\'e}o and {Nguyen-Dang}, Tung and Pham, H. Hieu and Le, Dung D. and Sauer, Joachim and Phung, Viet Bac T. and Chayes, Jennifer T. and Borgs, Christian and Boley, Mario and El Ghaoui, Laurent and Yaghi, Omar M.},
