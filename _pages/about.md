@@ -11,8 +11,6 @@ I am Associate Professor at the Department of Information Systems at the Univers
 
 ## Updates
 
-## Updates
-
 {% assign updates = site.publications | concat: site.projects %}
 {% assign updates = updates | sort: "date" | reverse %}
 
