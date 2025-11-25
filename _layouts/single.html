@@ -66,12 +66,22 @@ layout: default
 
             {% if page.bibtex %}
               {% if page.paperurl or page.slidesurl %} | {% endif %}
-              <a href="#" onclick="this.nextElementSibling.open = !this.nextElementSibling.open; return false;">BibTeX</a>
-              <details style="margin-top:0.5em;">
-                <pre>{{ page.bibtex | escape }}</pre>
-              </details>
+
+              <a href="#"
+                onclick="var b=this.parentElement.nextElementSibling;
+                          b.style.display = (b.style.display==='none'?'block':'none');
+                          return false;">
+                BibTeX
+              </a>
             {% endif %}
           </p>
+
+          {% if page.bibtex %}
+            <div class="bibtex-block"
+                style="display:none; font-size: smaller; margin-top:0.5em;">
+              <pre>{{ page.bibtex | escape }}</pre>
+            </div>
+          {% endif %}
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
