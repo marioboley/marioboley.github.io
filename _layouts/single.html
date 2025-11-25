@@ -77,39 +77,28 @@ layout: default
           </p>
 
           {% if page.bibtex %}
-            {% assign bib_id = 'bibtex-' | append: page.slug %}
             <div class="bibtex-block"
-                style="display:none; font-size: smaller; margin-top:0.5em;
+                style="display:none; font-size:0.85em; margin-top:0.5em;
                         border:1px solid #ccc; padding:0.5em 0.75em;
                         border-radius:4px; background:#f8f8f8;">
+
               <button type="button"
                       style="float:right; margin-left:0.5em; font-size:0.8em;"
+                      data-bibtex="{{ page.bibtex | escape }}"
                       onclick="(function(btn){
-                                  var pre = document.getElementById('{{ bib_id }}');
-                                  if (!pre) return;
-                                  var text = pre.innerText || pre.textContent;
+                                  var text = btn.getAttribute('data-bibtex');
                                   if (navigator.clipboard && navigator.clipboard.writeText) {
                                     navigator.clipboard.writeText(text).then(function(){
                                       var old = btn.textContent;
                                       btn.textContent = 'Copied!';
                                       setTimeout(function(){ btn.textContent = old; }, 1200);
-                                    });
-                                  } else {
-                                    // Fallback
-                                    var ta = document.createElement('textarea');
-                                    ta.value = text;
-                                    document.body.appendChild(ta);
-                                    ta.select();
-                                    try { document.execCommand('copy'); } catch(e){}
-                                    document.body.removeChild(ta);
-                                    var old2 = btn.textContent;
-                                    btn.textContent = 'Copied!';
-                                    setTimeout(function(){ btn.textContent = old2; }, 1200);
+                                    }).catch(function(e){ console && console.warn && console.warn(e); });
                                   }
                                 })(this);">
                 Copy
               </button>
-              <pre id="{{ bib_id }}" style="margin:0;">{{ page.bibtex | escape }}</pre>
+
+              <pre style="margin:0; font-size:0.85em;">{{ page.bibtex | escape }}</pre>
             </div>
           {% endif %}
         {% endif %}
