@@ -23,7 +23,7 @@ abstract: |-
 ---
 
 <p align="center">
-  <img src="/files/2025-11-25-aires-teaser-image.pdf" width="80%">
+  <img src="/files/2025-11-25-aires-teaser-image.jpg" width="80%">
 </p>
 
 **Abstract:** The discovery of crystalline reticular materials remains largely trial-and-error despite their societal importance. We introduce our algorithmic iterative reticular synthesis (AIRES) cycle, which integrates automated synthesis, image recognition, single-crystal X-ray diffraction and, crucially, customized algorithmic decision-making, to maximize distinct crystal discoveries rather than optimizing single targets. Demonstrated on zeolitic imidazolate frameworks (ZIFs), AIRES achieves twice the discovery rate of random exploration, crystallizing 10 new linkers into diverse ZIF topologies and expanding the single-linker Zn-ZIF library by one-third. By transforming reticular synthesis from an empirical process to a systematic exploration, AIRES provides a scalable and efficient blueprint for accelerating materials discovery.
