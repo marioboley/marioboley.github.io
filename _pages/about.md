@@ -11,13 +11,19 @@ I am Associate Professor at the Department of Information Systems at the Univers
 
 ## Updates
 
-{% assign recent_posts = site.posts | sort: "date" | reverse %}
+## Updates
+
+{% assign updates = site.publications | concat: site.projects %}
+{% assign updates = updates | sort: "date" | reverse %}
+
 <ul>
-  {% for post in recent_posts limit:3 %}
+  {% for item in updates limit:3 %}
     <li>
-      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span>{{ item.date | date: "%Y-%m-%d" }}</span>
       &mdash;
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if item.collection == "publications" %}[Publication]{% endif %}
+      {% if item.collection == "projects" %}[Project]{% endif %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
     </li>
   {% endfor %}
 </ul>
