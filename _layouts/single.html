@@ -49,23 +49,25 @@ layout: default
 
         {% include related_publications.html %}
         
-        {% if page.citation or page.paperurl or page.slidesurl or page.bibtex %}
+        {% if page.citation or page.paperurl or page.fulltexturl or page.slidesurl or page.bibtex %}
           <p style="font-size: smaller">
             {% if page.citation %}
               {{ page.citation }}<br />
             {% endif %}
 
-            {% if page.paperurl %}
+            {% if page.fulltexturl %}
+              <a href="{{ page.fulltexturl }}">Paper</a>
+            {% elsif page.paperurl %}
               <a href="{{ page.paperurl }}">Paper</a>
             {% endif %}
 
             {% if page.slidesurl %}
-              {% if page.paperurl %} | {% endif %}
+              {% if page.paperurl or page.fulltexturl %} | {% endif %}
               <a href="{{ page.slidesurl }}">Slides</a>
             {% endif %}
 
             {% if page.bibtex %}
-              {% if page.paperurl or page.slidesurl %} | {% endif %}
+              {% if page.paperurl or page.fulltexturl or page.slidesurl %} | {% endif %}
 
               <a href="#"
                 onclick="var b=this.parentElement.nextElementSibling;
