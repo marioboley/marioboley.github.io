@@ -10,6 +10,7 @@ venue: 'Proceedings of the 36th International Conference on Neural Information P
 paperurl: 'https://papers.neurips.cc/paper_files/paper/2023/file/3eec5006051d9544e717067de3220198-Paper-Conference.pdf'
 slidesurl: 
 videourl: 'https://slideslive.com/39010083/bayes-beats-cross-validation-efficient-and-accurate-ridge-regression-via-expectation-maximization'
+softwareurl: '/software/fastridge/'
 citation: 'SY Tew, M Boley, DF Schmidt. (2023). &quot;Bayes beats cross validation: fast and accurate ridge regression via expectation maximization.&quot; <i>NeurIPS</i>. 36'
 bibtex: |-
     @inproceedings{tew2023bayes,
