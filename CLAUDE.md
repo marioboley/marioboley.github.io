@@ -55,6 +55,12 @@ Projects can list related publications by slug in their `publications` front mat
 
 PDFs, slides, and videos are stored in `files/` with the naming convention `YYYY-MM-DD-type-author-slug.ext`. Reference them with absolute paths like `/files/filename.ext`.
 
+### Jekyll Exclusions
+
+The `jekyll-optional-front-matter` plugin causes Jekyll to process **all** markdown files in the repo, even without front matter. Liquid tags inside code blocks are evaluated before markdown rendering, so fenced code blocks do **not** protect Liquid syntax — this can crash the GitHub Pages build silently.
+
+Any new directory containing markdown files that is **not** a Jekyll collection (i.e. not a `_`-prefixed directory like `_publications/`) must be added to the `exclude` list in `_config.yml`. New collections added under `_` prefixed directories are handled correctly by Jekyll and do not need excluding. Currently excluded non-collection directories: `docs/`, `CLAUDE.md`.
+
 ### Batch Content Generation
 
 `markdown_generator/` contains Python/Jupyter tools to bulk-generate markdown from TSV or BibTeX input (`pubsFromBib.py`, `OrcidToBib.ipynb`, etc.). Prefer these for adding multiple entries at once.
