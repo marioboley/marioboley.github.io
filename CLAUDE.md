@@ -27,7 +27,7 @@ This is an **Academic Pages** Jekyll site (fork of Minimal Mistakes). Content li
 
 **Publications** (`_publications/YYYY-slug.md`) — front matter fields:
 - Required: `title`, `collection`, `category` (`manuscripts` | `conferences` | `books`), `permalink`, `date`, `venue`, `citation`
-- Optional: `excerpt`, `paperurl`, `fulltexturl` (overrides `paperurl` for the "Paper" link when present), `slidesurl`, `bibtex`
+- Optional: `excerpt`, `paperurl`, `fulltexturl` (overrides `paperurl` for the "Paper" link when present), `slidesurl`, `videourl` (URL to video recording, local or external; renders a "Video" link that opens in a new tab), `bibtex`
 
 **Talks** (`_talks/YYYY-MM-DD-slug.md`) — fields: `title`, `type`, `venue`, `date`, `location`, `slidesurl`
 
