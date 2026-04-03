@@ -21,21 +21,31 @@ bundle exec jekyll build && cd _site && python3 -m http.server 4000
 
 ## Architecture
 
-This is an **Academic Pages** Jekyll site (fork of Minimal Mistakes). Content lives in five collections (`_publications/`, `_talks/`, `_projects/`, `_teaching/`, `_portfolio/`), rendered via `_layouts/single.html` and aggregated by pages in `_pages/`.
+This is an **Academic Pages** Jekyll site (fork of Minimal Mistakes). Content lives in six collections (`_publications/`, `_software/`, `_talks/`, `_projects/`, `_teaching/`, `_portfolio/`), aggregated by pages in `_pages/`. Collections use either a dedicated layout (`_layouts/software.html`, `_layouts/talk.html`) or the general-purpose `_layouts/single.html`, which currently serves publications, projects, and teaching pages. The latter are flagged for future refactoring into dedicated layouts following the same pattern.
 
 ### Content Collections
 
 **Publications** (`_publications/YYYY-slug.md`) — front matter fields:
 - Required: `title`, `collection`, `category` (`manuscripts` | `conferences` | `books`), `permalink`, `date`, `venue`, `citation`
-- Optional: `excerpt`, `paperurl`, `fulltexturl` (overrides `paperurl` for the "Paper" link when present), `slidesurl`, `videourl` (URL to video recording, local or external; renders a "Video" link that opens in a new tab), `bibtex`
+- Optional: `excerpt`, `paperurl`, `fulltexturl` (overrides `paperurl` for the "Paper" link when present), `slidesurl`, `videourl` (URL to video recording, local or external; renders a "Video" link that opens in a new tab), `softwareurl` (URL to on-site software page or external repo; renders a "Software" link to the same tab), `bibtex`
+
+**Software** (`_software/slug.md`) — front matter fields:
+- Required: `title`, `collection`, `permalink`
+- Optional: `excerpt`, `sourceurl` (source repository URL; renders a "Source" link opening in a new tab), `packageurl` (package index URL e.g. PyPI; renders a "Package" link opening in a new tab), `publications` (list of publication slugs for cross-linking)
+
+The `_includes/software-links.html` partial renders the Source / Package link row and is shared between `_layouts/software.html` and `_includes/archive-single-software.html`.
 
 **Talks** (`_talks/YYYY-MM-DD-slug.md`) — fields: `title`, `type`, `venue`, `date`, `location`, `slidesurl`
 
 **Projects** (`_projects/YYYY-slug.md`) — fields: `title`, `date`, `project_type` (`collaborative` | `student`), `publications` (list of publication slugs for cross-linking)
 
-### Key Layout: `_layouts/single.html`
+### Layouts
 
-Handles all publication/talk/project pages. Renders citation, Paper/Slides/BibTeX links, and an expandable BibTeX block with copy-to-clipboard. The `fulltexturl` field was added to support locally-hosted PDFs as an alternative to paywalled `paperurl` links.
+**`_layouts/single.html`** — handles publications, projects, and teaching pages. Renders citation and a Paper / Slides / Video / Software / BibTeX link row (each conditional on its front matter field), plus an expandable BibTeX block with copy-to-clipboard. The `fulltexturl` field overrides `paperurl` for the Paper link. The link row is inlined in the layout rather than extracted into a shared include — flagged for refactoring to follow the pattern established by `_includes/software-links.html`. Flagged for eventual splitting into dedicated per-collection layouts.
+
+**`_layouts/software.html`** — handles software pages. Renders page content, calls `_includes/software-links.html` for the Source / Package link row, then `_includes/related_publications.html` for cross-linked papers.
+
+**`_layouts/talk.html`** — handles talk pages.
 
 ### Publications Page Logic
 
