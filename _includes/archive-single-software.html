@@ -2,5 +2,6 @@
 
 <p itemprop="description">
   <a href="{{ sw.url | relative_url }}">{{ sw.title }}</a>
+  {% if sw.excerpt %} — {{ sw.excerpt | markdownify | strip_html | truncate: 160 }}{% endif %}
 </p>
 {% include software-links.html item=sw %}

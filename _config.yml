@@ -228,6 +228,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  software:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -286,6 +289,13 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _software
+  - scope:
+      path: ""
+      type: software
+    values:
+      layout: software
+      author_profile: true
   # _talks
   - scope:
       path: ""
