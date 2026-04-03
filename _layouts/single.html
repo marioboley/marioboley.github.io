@@ -66,8 +66,13 @@ layout: default
               <a href="{{ page.slidesurl }}">Slides</a>
             {% endif %}
 
-            {% if page.bibtex %}
+            {% if page.videourl %}
               {% if page.paperurl or page.fulltexturl or page.slidesurl %} | {% endif %}
+              <a href="{{ page.videourl }}" target="_blank" rel="noopener">Video</a>
+            {% endif %}
+
+            {% if page.bibtex %}
+              {% if page.paperurl or page.fulltexturl or page.slidesurl or page.videourl %} | {% endif %}
 
               <a href="#"
                 onclick="var b=this.parentElement.nextElementSibling;

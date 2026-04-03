@@ -7,6 +7,7 @@ excerpt: 'Improving the accuracy / comprehensibility trade-off of additive rule 
 date: 2021-01-21
 venue: 'Proceedings of the 2021 SIAM International Conference on Data Mining (SDM)'
 slidesurl: '/files/2021-04-20-slides-boley-optrules.pdf'
+videourl: '/files/2021-04-15-video-boley-optrules.mp4'
 paperurl: 'https://epubs.siam.org/doi/pdf/10.1137/1.9781611976700.40'
 fulltexturl: '/files/2021-01-21-fulltext-boley-optrules.pdf'
 citation: 'M Boley, S Teshuva, P Le Bodic, G Webb. (2021). &quot;Better Short than Greedy: Interpretable Models through Optimal Rule Boosting.&quot; <i>SDM</i>.'
