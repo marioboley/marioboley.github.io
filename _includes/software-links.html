@@ -1,0 +1,12 @@
+{%- assign item = include.item -%}
+{% if item.sourceurl or item.packageurl %}
+  <p style="font-size: smaller">
+    {% if item.sourceurl %}
+      <a href="{{ item.sourceurl }}" target="_blank" rel="noopener">Source</a>
+    {% endif %}
+    {% if item.packageurl %}
+      {% if item.sourceurl %} | {% endif %}
+      <a href="{{ item.packageurl }}" target="_blank" rel="noopener">Package</a>
+    {% endif %}
+  </p>
+{% endif %}

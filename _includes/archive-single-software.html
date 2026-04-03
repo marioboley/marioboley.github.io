@@ -1,0 +1,6 @@
+{%- assign sw = include.post | default: post -%}
+
+<p itemprop="description">
+  <a href="{{ sw.url | relative_url }}">{{ sw.title }}</a>
+</p>
+{% include software-links.html item=sw %}
