@@ -169,6 +169,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - CLAUDE.md
   - docs
   - Dockerfile
   - Gemfile
